@@ -1,0 +1,9 @@
+.NewNote {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .NewNote form textarea {
+    height: 300px;
+    font-size: 24px;
+  }
