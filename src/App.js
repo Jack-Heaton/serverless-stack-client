@@ -54,7 +54,7 @@ function App(props) {
     <React.Fragment>
       <Nav.Item>
         <LinkContainer to="/signup">
-          <Nav.Link>Signup</Nav.Link>
+          <Nav.Link>Signup Here!</Nav.Link>
         </LinkContainer>
       </Nav.Item>
       <Nav.Item>
