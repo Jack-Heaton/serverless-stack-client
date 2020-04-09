@@ -14,16 +14,18 @@ export default function Home(props) {
     async function onLoad() {
       if (!props.isAuthenticated) {
         return;
+        
+      } else {
+        try {
+          const notes = await loadNotes();
+          setNotes(notes);
+          setIsLoading(false);
+        } catch (e) {
+          console.log(e);
+          setIsLoading(false);
+        }
+    
       }
-  
-      try {
-        const notes = await loadNotes();
-        setNotes(notes);
-      } catch (e) {
-        console.log(e);
-      }
-  
-      setIsLoading(false);
     }
   
     onLoad();
